@@ -27,14 +27,14 @@ class SecondViewController: UIViewController {
     // MARK: - Public Properties
     var delegate: SecondViewControllerDelegate!
     var currentColor: UIColor!
-    
+     
     override func viewDidLoad() {
         super.viewDidLoad()
         viewLabel.layer.cornerRadius = 20
         viewLabel.backgroundColor = currentColor
         
         settingForViewDidLoad()
-        setValue(for: redSlider, greenSlider, blueSlider)
+        setValueSliders(for: redSlider, greenSlider, blueSlider)
         setValueSliders(for: redLabel, greenLabel, blueLabel)
         setValueSliders(for: redTextField, greenTextField, blueTextField)
         addDoneButton(to: redTextField, greenTextField, blueTextField)
@@ -63,6 +63,10 @@ class SecondViewController: UIViewController {
     @IBAction func doneButton() {
         delegate?.setColor(viewLabel.backgroundColor ?? .red)
         dismiss(animated: true)
+    }
+    
+    deinit {
+        print("SecondViewController has been dealocated")
     }
 }
 
@@ -100,7 +104,7 @@ extension SecondViewController {
         }
     }
     
-    private func setValue(for sliders: UISlider...) {
+    private func setValueSliders(for sliders: UISlider...) {
         let ciColor = CIColor(color: currentColor)
         
         sliders.forEach { slider in

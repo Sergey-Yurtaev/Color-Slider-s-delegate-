@@ -19,6 +19,10 @@ class FirstViewController: UIViewController {
         secondVC.delegate = self
         secondVC.currentColor = view.backgroundColor
     }
+    
+    deinit {
+        print("FirstViewController has been dealocated")
+    }
 }
 
 // MARK: - ColorDelegate

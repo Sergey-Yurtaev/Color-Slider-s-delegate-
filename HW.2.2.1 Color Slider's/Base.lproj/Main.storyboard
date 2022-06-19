@@ -182,6 +182,7 @@
                             <constraint firstAttribute="trailing" secondItem="Xrr-qO-1kp" secondAttribute="trailing" constant="20" id="tdR-Tf-XcE"/>
                         </constraints>
                     </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="569"/>
                     <connections>
                         <outlet property="blueLabel" destination="SAt-Nr-Als" id="mC9-pO-dem"/>
                         <outlet property="blueSlider" destination="amy-b3-izZ" id="Ykf-z7-QPy"/>
@@ -197,7 +198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1125" y="137.32394366197184"/>
+            <point key="canvasLocation" x="1093" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gIa-jT-k0k">
@@ -215,7 +216,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBp-Nl-81R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-701.25" y="136.26760563380282"/>
+            <point key="canvasLocation" x="-512" y="137"/>
         </scene>
     </scenes>
     <resources>
